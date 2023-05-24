@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Dynamic Form",
+  "fields": [
+    {
+      "field_id": "firstName",
+      "field_label": "First Name",
+      "field_mandatory": "yes",
+      "field_type": "text",
+      "field_value": "",
+      "field_validation": ["required"],
+      "field_error_Message": ["this field is required"]
+    },
+    {
+      "field_id": "lastName",
+      "field_label": "Last Name",
+      "field_mandatory": "yes",
+      "field_type": "text",
+      "field_value": "",
+      "field_validation": ["required"],
+      "field_error_Message": ["this field is required"]
+    },
+    {
+      "field_id": "age",
+      "field_label": "Age",
+      "field_mandatory": "yes",
+      "field_type": "text",
+      "field_value": "",
+      "field_validation": ["required", "isNumber"],
+      "field_error_Message": ["this field is required", "age must be a number"]
+    },
+    {
+      "field_id": "email",
+      "field_label": "Email",
+      "field_mandatory": "yes",
+      "field_type": "text",
+      "field_value": "",
+      "field_validation": ["required", "isEmail"],
+      "field_error_Message": ["this field is required", "email is not valid"]
+    },
+    {
+      "field_id": "employment",
+      "field_label": "Employment type desired",
+      "field_value": "1",
+      "field_mandatory": "yes",
+      "field_options": [
+        { "value": "1", "label": "Full-Time" },
+        {
+          "value": "2",
+          "label": "Part-Time"
+        }
+      ],
+      "field_type": "select"
+    },
+    {
+      "field_id": "contact",
+      "field_label": "Contact No.",
+      "field_mandatory": "yes",
+      "field_type": "text",
+      "field_value": "",
+      "field_validation": ["required", "isNumber"],
+      "field_error_Message": ["this field is required", "contact is not valid"]
+    },
+    {
+      "field_id": "drivingLicense",
+      "field_label": "I confirm to have driving license.",
+      "field_type": "checkbox",
+      "field_value": true
+    },
+    {
+      "field_id": "identity",
+      "field_label": "Driving License No.",
+      "field_mandatory": "yes",
+      "field_type": "text",
+      "field_value": "",
+      "field_validation": ["required"],
+      "field_error_Message": ["this field is required"]
+    }
+  ]
+}
